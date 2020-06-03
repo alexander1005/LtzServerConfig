@@ -1,0 +1,18 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: ltzConfig
+  cloud:
+    config:
+      server:
+        git:
+          # 配置git仓库地址
+          uri: https://github.com/liaotian1005/config.git
+          # 访问git仓库的用户名
+          username:
+          # 访问git仓库的用户密码 如果Git仓库为公开仓库，可以不填写用户名和密码，如果是私有仓库需要填写
+          password:
+          #支持带{application}和{profile}（{label}如果需要）占位符的搜索路径
+          search-paths: '{application}'
+          default-label: master
