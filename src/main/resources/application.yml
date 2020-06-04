@@ -16,3 +16,7 @@ spring:
           #支持带{application}和{profile}（{label}如果需要）占位符的搜索路径
           search-paths: '{application}'
           default-label: master
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.50.221:9998/eureka/
