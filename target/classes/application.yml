@@ -19,4 +19,4 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://192.168.50.221:9998/eureka/
+      defaultZone: http://liaotianzheng.com:9998/eureka/
